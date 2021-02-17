@@ -1,0 +1,30 @@
+<section>
+    <div class="container">
+        <table class="table table-stripped" id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>E-Mail</th>
+                    <th>Mobile</th>
+                    <th>Place</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each list}}
+                <tr>
+                    <td>{{this.fullName}}</td>
+                    <td>{{this.email}}</td>
+                    <td>{{this.mobile}}</td>
+                    <td>{{this.place}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<script>
+  $(function () {
+    $('#productsTable').DataTable();
+  });
+</script>
